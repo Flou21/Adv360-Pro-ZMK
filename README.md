@@ -2,6 +2,8 @@
 
 ## To build Firmware in GitHub Actions
 
+Pro GUI: https://kinesiscorporation.github.io/Adv360-Pro-GUI
+
 ### Setup
 
 1. Fork this repo.
