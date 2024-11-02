@@ -22,6 +22,7 @@
 / {
   behaviors {
     #include "macros.dtsi"
+    #include "version.dtsi"
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -40,11 +41,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp N1    &kp N2        &kp N3    &kp N4    &kp N5               &tog 1           &mo 3            &kp N6     &kp N7     &kp N8         &kp N9           &kp N0  &kp MINUS
-   &kp TAB      &kp Q     &kp W         &kp E     &kp R     &kp T                &none           &none             &kp Y      &kp U      &kp I          &kp O            &kp P   &kp BSLH
-   &kp ESC      &kp A     &kp S         &kp D     &kp F     &kp G                &none  &kp LEFT_ARROW    &kp DOWN_ARROW                         &kp UP_ARROW  &kp RIGHT_ARROW      &none     &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z     &kp X         &kp C     &kp V     &kp B                &none           &none            &kp GT      &none      &none   &kp LEFT_ALT            &none      &none     &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 4  &kp GRAVE  &kp CAPS  &kp LEFT_ALT  &kp LGUI  &kp BSPC            &kp LCTRL   &kp LESS_THAN  &kp LEFT_COMMAND  &kp ENTER  &kp SPACE  &kp RIGHT_WIN    &kp RIGHT_ALT   &kp LBKT  &kp RBKT   &mo 2
+ &kp EQUAL          &kp N1              &kp N2            &kp N3              &kp N4    &kp N5               &tog 1           &mo 3            &kp N6     &kp N7     &kp N8         &kp N9           &kp N0  &kp MINUS
+   &kp TAB           &kp Q               &kp W             &kp E               &kp R     &kp T                &none           &none             &kp Y      &kp U      &kp I          &kp O            &kp P   &kp BSLH
+   &kp ESC  &mt LEFT_ALT A  &mt LEFT_CONTROL S  &mt LEFT_SHIFT D  &mt LEFT_COMMAND F     &kp G                &none  &kp LEFT_ARROW    &kp DOWN_ARROW                         &kp UP_ARROW  &kp RIGHT_ARROW      &none     &kp H  &mt RIGHT_COMMAND J  &mt RIGHT_SHIFT K  &mt RIGHT_CONTROL L  &mt RIGHT_ALT SEMICOLON    &kp SQT
+ &kp LSHFT           &kp Z               &kp X             &kp C               &kp V     &kp B                &none           &none            &kp GT      &none      &none   &kp LEFT_ALT            &none      &none     &kp N                &kp M          &kp COMMA              &kp DOT                 &kp FSLH  &kp RSHFT
+     &mo 4       &kp GRAVE            &kp CAPS      &kp LEFT_ALT            &kp LGUI  &kp BSPC            &kp LCTRL   &kp LESS_THAN  &kp LEFT_COMMAND  &kp ENTER  &kp SPACE  &kp RIGHT_WIN    &kp RIGHT_ALT   &kp LBKT  &kp RBKT                &mo 2
             >;
         };
 
